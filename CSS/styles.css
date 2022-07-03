@@ -136,7 +136,9 @@ img {
    width: 12px;
    height: 16px;
 }
-.link:hover .header-icon {
+.link:hover .header-icon,
+.link:focus .header-icon,
+.link:active .header-icon {
     fill: var(--hover-backgroundcolor);
 }
 /* .header-icon:hover,
@@ -176,6 +178,14 @@ img {
     color: #fff;
 }
 .button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     margin-top: 30px;
     width: 200px;
     height: 50px;
@@ -211,10 +221,17 @@ display: none;
     margin-bottom: 0;
 }
 .princeples-icons {
+    display: flex;
+    /* width: 270px;
+    height: 120px; */
+    text-align: center;
+
+}
+.princeples-item-icon {
+    display: flex;
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
-    text-align: center;
+    justify-content: center;
     display: inline-flex;
     align-items: center;
     background: #F5F4FA;
@@ -314,10 +331,14 @@ display: none;
     height: 20px;
     fill:rgba(175, 177, 184, 1);
 } 
-.link-area:hover {
+.link-area:hover,
+.link-area:focus,
+.link-area:active {
     background-color: var(--hover-backgroundcolor);
 }
-.link-area:hover .social-links {
+.link-area:hover .social-links,
+.link-area:focus .social-links,
+.link-area:active .social-links {
     fill: #fff;
 }
 /* .social-links:hover,
@@ -352,10 +373,14 @@ display: none;
     align-items: center;
     justify-content: center;
 }
-.customer-link:hover .customer-icon {
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon,
+.customer-link:active .customer-icon {
     fill: var(--hover-backgroundcolor);
 } 
-.customer-link:hover {
+.customer-link:hover,
+.customer-link:focus,
+.customer-link:active {
     border-color: var(--hover-backgroundcolor);
     }
 /* footer */
@@ -424,7 +449,9 @@ footer .contacts {
     height: 20px;
     fill: #fff;
 }
-.footer-link-area:hover {
+.footer-link-area:hover,
+.footer-link-area:focus,
+.footer-link-area:active {
     background-color: var(--hover-backgroundcolor);
 }
 .footer-social-list-item:not(:last-child) {
@@ -456,6 +483,7 @@ footer .contacts {
     cursor: pointer;
     height: 38px;
     padding: 6px 22px;
+    border: 0;
     border-radius: 4px;
 }
 
@@ -487,7 +515,9 @@ footer .contacts {
 .projects-item:nth-child(-n+6) {
     margin-bottom: 30px;
 }
-.projects-item:hover {
+.projects-item:hover,
+.projects-item:focus,
+.projects-item:active {
     box-shadow:
         0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
